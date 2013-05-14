@@ -46,7 +46,7 @@ retT FP<retT, argT>::operator()(argT arg) const
     return (retT)0;
 }
 
-// pre-define the templated instance for the linker
+// pre-define the types for the linker
 template class FP<void,char>;
 template class FP<void,char*>;
 template class FP<void,int8_t>;
