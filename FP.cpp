@@ -71,6 +71,7 @@ template class FP<void,float>;
 template class FP<void,float*>;
 template class FP<void,double>;
 template class FP<void,double*>;
+template class FP<void,void*>;
 
 template class FP<int8_t,char>;
 template class FP<int8_t,char*>;
