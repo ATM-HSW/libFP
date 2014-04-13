@@ -161,6 +161,10 @@ public:
      *  @return The return from the function hanlder called by this class
      */
     retT operator()(argT arg) const;
+    
+    bool attached();
+    
+    void detach();
 
 private:
     

@@ -31,6 +31,21 @@ FP<retT, argT>::FP()
 }
 
 template<class retT, class argT>
+bool FP<retT, argT>::attached()
+{
+    return obj_callback || c_callback;
+}
+
+
+template<class retT, class argT>
+void FP<retT, argT>::detach()
+{
+    obj_callback = 0;
+    c_callback = 0;
+}
+
+
+template<class retT, class argT>
 void FP<retT, argT>::attach(retT (*function)(argT))
 {
     c_callback = function;
